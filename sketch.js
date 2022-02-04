@@ -139,10 +139,10 @@ if(bullets==0){
 if(zombieGroup.isTouching(bulletGroup)){
   for(var i=0;i<zombieGroup.length;i++){     
       //write a condition for zombiegroup touches bulletGroup
-   if(zombieGroup.isTouching(bulletGroup)){
+   if(zombieGroup[i].isTouching(bulletGroup)){
 //destroy zombie
-        bulletGroup.destroyEach()
-       
+        zombieGroup[i].destroy()
+       bulletGroup.destroyEach()
         } 
   
   }
